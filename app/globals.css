@@ -3,12 +3,30 @@
 @theme inline {
   --font-sans: var(--font-inter);
   --font-mono: var(--font-jetbrains-mono);
-  --color-background: #f7f1e6;
-  --color-foreground: #2b2019;
-  --color-muted: #8a7a68;
-  --color-line: #e3d9c8;
-  --color-surface: #efe6d6;
-  --color-accent: #8b5a2b;
+  --color-background: var(--bg);
+  --color-foreground: var(--fg);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-surface: var(--surface);
+  --color-accent: var(--accent);
+}
+
+:root {
+  --bg: #f7f1e6;
+  --fg: #2b2019;
+  --muted: #8a7a68;
+  --line: #e3d9c8;
+  --surface: #efe6d6;
+  --accent: #8b5a2b;
+}
+
+[data-theme="dark"] {
+  --bg: #241a14;
+  --fg: #f3e9d8;
+  --muted: #b3a08a;
+  --line: #4a3b2e;
+  --surface: #332620;
+  --accent: #d9a463;
 }
 
 body {
@@ -18,6 +36,10 @@ body {
 
 ::selection {
   background: #e8d9be;
+}
+
+[data-theme="dark"] ::selection {
+  background: #5a4632;
 }
 
 @keyframes line-in {
