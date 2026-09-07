@@ -2,10 +2,11 @@ import Link from "next/link";
 import ThemeToggle from "./theme-toggle";
 
 const socials = [
-  { label: "GITHUB", href: "https://github.com/yourusername" },
-  { label: "TWITTER", href: "https://x.com/yourusername" },
-  { label: "LINKEDIN", href: "https://linkedin.com/in/yourusername" },
-  { label: "RÉSUMÉ", href: "/resume.pdf" },
+  { label: "GITHUB", href: "https://github.com/arpitsehal" },
+  { label: "TWITTER", href: "https://x.com/MacAppu0" },
+  { label: "LINKEDIN", href: "https://linkedin.com/in/arpitsehal" },
+  { label: "INSTAGRAM", href: "https://instagram.com/_axpiitttt" },
+  { label: "RÉSUMÉ", href: "https://drive.google.com/file/d/1ZRUsWZ0k_nkDJmu2FqdewACW7M9nMtaP/view?usp=sharing" },
 ];
 
 const projects = [
@@ -41,22 +42,28 @@ export default function Home() {
       <main className="flex w-full flex-col pt-10 md:pt-12 pb-28 gap-2">
         <div className="mx-auto max-w-lg w-full">
           <h1 className="font-mono font-semibold text-lg mb-4">
-            HEY! I&apos;M YOUR NAME<span>.</span>
+            HI! I&apos;M ARPIT<span>.</span>
           </h1>
           <p className="text-sm leading-relaxed">
-            i&apos;m a one-line description of what you do, based in{" "}
-            <a className="underline decoration-accent/40 hover:decoration-accent transition-colors duration-300" href="#">
-              your city, country
+            i&apos;m a frontend-first full stack developer and final year CS
+            undergrad{" "}
+            <a
+              className="underline decoration-accent/40 hover:decoration-accent transition-colors duration-300"
+              href="https://ptu.ac.in/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              @ punjab technical university
             </a>
-            .
+            , 20 y/o, from Yamuna Nagar, HR (india).
             <br />
             <br />
             reach out{" "}
             <a
               className="text-accent hover:underline transition-colors duration-300"
-              href="mailto:you@example.com"
+              href="mailto:2005sehalarpit@gmail.com"
             >
-              you@example.com
+              2005sehalarpit@gmail.com
             </a>
           </p>
 
@@ -132,7 +139,7 @@ export default function Home() {
 
       <footer className="flex font-mono text-xs w-full py-3.5 text-muted border-t border-line bg-surface px-4 md:px-0 transition-colors duration-300">
         <div className="w-full flex justify-between items-center max-w-lg mx-auto">
-          <span>© {new Date().getFullYear()} YOUR NAME</span>
+          <span>© {new Date().getFullYear()} ARPIT</span>
         </div>
       </footer>
     </div>
