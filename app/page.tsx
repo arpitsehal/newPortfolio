@@ -30,9 +30,8 @@ const experience: ExperienceEntry[] = [
 ];
 
 const achievements = [
-  "winner of some hackathon, built a thing called Thing",
-  "top N finalists out of some number of teams at some event",
-  "another accomplishment worth bragging about, briefly",
+  "1st rank in a 30-day GeeksforGeeks coding marathon (2026), solving DSA problems daily",
+  "top 10 finalist out of 230+ teams at PSB Hackathon Series 2025 with an AI-powered security solution",
 ];
 
 export default function Home() {
@@ -149,8 +148,8 @@ export default function Home() {
 
           <h2 className="font-mono font-semibold mt-8 mb-4 text-base">TL;DR:</h2>
           <p className="text-sm leading-relaxed">
-            a couple of sentences about how you approach work, what you care about,
-            what you&apos;re into outside of code.
+            i&apos;m a fan of the process. i&apos;ve been building things and
+            working for startups for well over an year now.
           </p>
         </div>
       </main>
