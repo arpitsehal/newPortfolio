@@ -117,7 +117,7 @@ export default function Home() {
                   <span className="block px-2 py-0.5 transition-opacity duration-150 group-hover:opacity-0">
                     {e.short}
                   </span>
-                  <span className="absolute left-0 top-0 overflow-hidden whitespace-nowrap px-2 py-0.5 border border-accent text-accent bg-accent/10 rounded-sm max-w-0 opacity-0 transition-[max-width,opacity,background-color,border-color,color] duration-300 group-hover:max-w-[12rem] group-hover:opacity-100">
+                  <span className="absolute left-0 top-0 overflow-hidden whitespace-nowrap px-2 py-0.5 border border-accent text-accent bg-background rounded-sm max-w-0 opacity-0 transition-[max-width,opacity,background-color,border-color,color] duration-300 group-hover:max-w-[12rem] group-hover:opacity-100">
                     {e.full}
                   </span>
                 </span>{" "}
