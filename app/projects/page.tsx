@@ -1,9 +1,5 @@
 import Link from "next/link";
-
-const pastProjects = [
-  { name: "old-project-one", href: "https://example.com", desc: "one-line description" },
-  { name: "old-project-two", href: "https://example.com", desc: "one-line description" },
-];
+import { projects, pastProjects } from "../data";
 
 export default function Projects() {
   return (
@@ -17,7 +13,21 @@ export default function Projects() {
       </div>
       <main className="flex w-full flex-col pt-4 pb-28 gap-2">
         <div className="mx-auto max-w-lg w-full">
-          <h1 className="font-mono font-semibold text-lg mb-4">PAST PROJECTS</h1>
+          <h1 className="font-mono font-semibold text-lg mb-4">PROJECTS</h1>
+
+          <h2 className="font-mono font-semibold mb-4 text-base">CURRENT:</h2>
+          <ul className="text-xs sm:text-sm font-mono list-disc list-inside -ml-1 space-y-1">
+            {projects.map((p) => (
+              <li key={p.name}>
+                <a className="text-accent underline decoration-accent/30 hover:decoration-accent transition-colors duration-300" target="_blank" href={p.href} rel="noreferrer">
+                  {p.name}
+                </a>{" "}
+                - {p.desc}
+              </li>
+            ))}
+          </ul>
+
+          <h2 className="font-mono font-semibold mt-8 mb-4 text-base">PAST:</h2>
           <ul className="text-xs sm:text-sm font-mono list-disc list-inside -ml-1 space-y-1">
             {pastProjects.map((p) => (
               <li key={p.name}>

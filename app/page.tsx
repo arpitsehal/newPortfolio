@@ -1,5 +1,6 @@
 import Link from "next/link";
 import ThemeToggle from "./theme-toggle";
+import { projects } from "./data";
 
 const socials = [
   { label: "GITHUB", href: "https://github.com/arpitsehal" },
@@ -7,11 +8,6 @@ const socials = [
   { label: "LINKEDIN", href: "https://linkedin.com/in/arpitsehal" },
   { label: "INSTAGRAM", href: "https://instagram.com/_axpiitttt" },
   { label: "RÉSUMÉ", href: "https://drive.google.com/file/d/1ZRUsWZ0k_nkDJmu2FqdewACW7M9nMtaP/view?usp=sharing" },
-];
-
-const projects = [
-  { name: "project-one", href: "https://example.com", desc: "a short one-line description of what it does" },
-  { name: "project-two", href: "https://example.com", desc: "another short one-line description" },
 ];
 
 const experience = [
