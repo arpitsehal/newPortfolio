@@ -28,8 +28,8 @@ export default function Home() {
   return (
     <div className="flex flex-col w-full min-h-screen px-4 md:px-0">
       <div className="w-full max-w-lg mx-auto">
-        <header className="flex justify-between items-center font-mono w-full py-4 text-gray-600">
-          <div className="h-6 w-6 rounded-full bg-gray-200" aria-hidden />
+        <header className="flex justify-between items-center font-mono w-full py-4 text-muted">
+          <div className="h-6 w-6 rounded-full bg-line" aria-hidden />
           <nav className="flex items-center gap-2.5 md:gap-4 underline text-xs md:text-sm">
             <Link href="/projects">PROJECTS</Link>
             <Link href="/resources">RESOURCES</Link>
@@ -44,7 +44,7 @@ export default function Home() {
           </h1>
           <p className="text-sm leading-relaxed">
             i&apos;m a one-line description of what you do, based in{" "}
-            <a className="underline hover:no-underline" href="#">
+            <a className="underline decoration-accent/40 hover:decoration-accent" href="#">
               your city, country
             </a>
             .
@@ -52,7 +52,7 @@ export default function Home() {
             <br />
             reach out{" "}
             <a
-              className="text-gray-500 hover:underline"
+              className="text-accent hover:underline"
               href="mailto:you@example.com"
             >
               you@example.com
@@ -63,7 +63,7 @@ export default function Home() {
             <span className="flex md:flex-row flex-col gap-1 md:gap-3">
               {socials.map((s) => (
                 <div className="flex items-center text-xs" key={s.label}>
-                  [ <a className="mx-1 hover:underline" target="_blank" href={s.href} rel="noreferrer">
+                  [ <a className="mx-1 hover:text-accent hover:underline" target="_blank" href={s.href} rel="noreferrer">
                     {s.label}
                   </a> ]
                 </div>
@@ -77,7 +77,7 @@ export default function Home() {
           <ul className="text-xs sm:text-sm font-mono list-disc list-inside -ml-1 space-y-1">
             {projects.map((p) => (
               <li key={p.name}>
-                <a className="underline hover:no-underline" target="_blank" href={p.href} rel="noreferrer">
+                <a className="text-accent underline decoration-accent/30 hover:decoration-accent" target="_blank" href={p.href} rel="noreferrer">
                   {p.name}
                 </a>{" "}
                 - {p.desc}
@@ -85,7 +85,7 @@ export default function Home() {
             ))}
           </ul>
           <p className="text-xs font-mono mt-2">
-            <Link className="hover:underline" href="/projects">
+            <Link className="text-muted hover:text-accent hover:underline" href="/projects">
               view past projects →
             </Link>
           </p>
@@ -96,15 +96,15 @@ export default function Home() {
           <ul className="text-xs sm:text-sm font-mono list-disc list-inside -ml-1 space-y-2">
             {experience.map((e) => (
               <li key={e.name} className="group">
-                <span className="relative inline-block text-xs rounded-sm border border-gray-200 text-gray-500 align-middle">
+                <span className="relative inline-block text-xs rounded-sm border border-line text-muted align-middle">
                   <span className="block px-2 py-0.5 transition-opacity duration-150 group-hover:opacity-0">
                     {e.short}
                   </span>
-                  <span className="absolute left-0 top-0 overflow-hidden whitespace-nowrap px-2 py-0.5 border border-green-500 text-green-600 bg-green-50 rounded-sm max-w-0 opacity-0 transition-[max-width,opacity] duration-300 group-hover:max-w-[12rem] group-hover:opacity-100">
+                  <span className="absolute left-0 top-0 overflow-hidden whitespace-nowrap px-2 py-0.5 border border-accent text-accent bg-accent/10 rounded-sm max-w-0 opacity-0 transition-[max-width,opacity] duration-300 group-hover:max-w-[12rem] group-hover:opacity-100">
                     {e.full}
                   </span>
                 </span>{" "}
-                <a className="underline hover:no-underline" target="_blank" href={e.href} rel="noreferrer">
+                <a className="text-accent underline decoration-accent/30 hover:decoration-accent" target="_blank" href={e.href} rel="noreferrer">
                   {e.name}
                 </a>{" "}
                 - {e.role}
@@ -129,7 +129,7 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className="flex font-mono text-xs w-full py-3.5 text-gray-500 border-t border-gray-200 bg-gray-50 px-4 md:px-0">
+      <footer className="flex font-mono text-xs w-full py-3.5 text-muted border-t border-line bg-surface px-4 md:px-0">
         <div className="w-full flex justify-between items-center max-w-lg mx-auto">
           <span>© {new Date().getFullYear()} YOUR NAME</span>
         </div>

@@ -8,8 +8,8 @@ export default function Resources() {
   return (
     <div className="flex flex-col w-full min-h-screen px-4 md:px-0">
       <div className="w-full max-w-lg mx-auto">
-        <header className="flex justify-between items-center font-mono w-full py-4 text-gray-600">
-          <Link href="/" className="text-xs underline">
+        <header className="flex justify-between items-center font-mono w-full py-4 text-muted">
+          <Link href="/" className="text-xs hover:text-accent hover:underline">
             ← back
           </Link>
         </header>
@@ -20,7 +20,7 @@ export default function Resources() {
           <ul className="text-xs sm:text-sm font-mono list-disc list-inside -ml-1 space-y-1">
             {resources.map((r) => (
               <li key={r.name}>
-                <a className="underline hover:no-underline" target="_blank" href={r.href} rel="noreferrer">
+                <a className="text-accent underline decoration-accent/30 hover:decoration-accent" target="_blank" href={r.href} rel="noreferrer">
                   {r.name}
                 </a>{" "}
                 - {r.desc}

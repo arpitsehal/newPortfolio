@@ -3,8 +3,12 @@
 @theme inline {
   --font-sans: var(--font-inter);
   --font-mono: var(--font-jetbrains-mono);
-  --color-background: #ffffff;
-  --color-foreground: #18181b;
+  --color-background: #f7f1e6;
+  --color-foreground: #2b2019;
+  --color-muted: #8a7a68;
+  --color-line: #e3d9c8;
+  --color-surface: #efe6d6;
+  --color-accent: #8b5a2b;
 }
 
 body {
@@ -13,7 +17,7 @@ body {
 }
 
 ::selection {
-  background: #dbeafe;
+  background: #e8d9be;
 }
 
 @keyframes line-in {
