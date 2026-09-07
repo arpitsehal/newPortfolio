@@ -10,10 +10,23 @@ const socials = [
   { label: "RÉSUMÉ", href: "https://drive.google.com/file/d/1ZRUsWZ0k_nkDJmu2FqdewACW7M9nMtaP/view?usp=sharing" },
 ];
 
-const experience = [
-  { short: "25-", full: "jun'25 – present", name: "current company", href: "https://example.com", role: "full-stack engineer" },
-  { short: "24-25", full: "sep'24 – jun'25", name: "previous company", href: "https://example.com", role: "software engineer intern" },
-  { short: "24", full: "jan'24 – aug'24", name: "earlier gig", href: "https://example.com", role: "frontend developer" },
+type ExperienceEntry = {
+  short: string;
+  full: string;
+  name: string;
+  href?: string;
+  role: string;
+};
+
+const experience: ExperienceEntry[] = [
+  { short: "26-", full: "aug'26 – present", name: "ainrion", role: "AIML intern" },
+  { short: "26", full: "may'26 – jul'26", name: "miles education", role: "AI software engineering intern" },
+  { short: "25-26", full: "sep'25 – jan'26", name: "ainrion", role: "MERN stack developer intern" },
+  { short: "25", full: "jun'25 – oct'25", name: "reskilll", role: "contributor" },
+  { short: "25", full: "jun'25 – aug'25", name: "yug yatra retail", role: "SDE intern" },
+  { short: "25", full: "jun'25 – jul'25", name: "pisoft informatics", role: "MERN stack intern" },
+  { short: "24-25", full: "nov'24 – jun'25", name: "girlscript summer of code", role: "contributor" },
+  { short: "24", full: "jul'24 – nov'24", name: "hackquest", role: "advocate" },
 ];
 
 const achievements = [
@@ -99,7 +112,7 @@ export default function Home() {
           </h2>
           <ul className="text-xs sm:text-sm font-mono list-disc list-inside -ml-1 space-y-2">
             {experience.map((e) => (
-              <li key={e.name} className="group">
+              <li key={`${e.name}-${e.full}`} className="group">
                 <span className="relative inline-block text-xs rounded-sm border border-line text-muted align-middle transition-colors duration-300">
                   <span className="block px-2 py-0.5 transition-opacity duration-150 group-hover:opacity-0">
                     {e.short}
@@ -108,9 +121,18 @@ export default function Home() {
                     {e.full}
                   </span>
                 </span>{" "}
-                <a className="text-accent underline decoration-accent/30 hover:decoration-accent transition-colors duration-300" target="_blank" href={e.href} rel="noreferrer">
-                  {e.name}
-                </a>{" "}
+                {e.href ? (
+                  <a
+                    className="text-accent underline decoration-accent/30 hover:decoration-accent transition-colors duration-300"
+                    target="_blank"
+                    href={e.href}
+                    rel="noreferrer"
+                  >
+                    {e.name}
+                  </a>
+                ) : (
+                  <span>{e.name}</span>
+                )}{" "}
                 - {e.role}
               </li>
             ))}
