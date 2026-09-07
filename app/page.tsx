@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import ThemeToggle from "./theme-toggle";
 import { projects } from "./data";
 
@@ -151,6 +152,13 @@ export default function Home() {
             i&apos;m a fan of the process. i&apos;ve been building things and
             working for startups for well over an year now.
           </p>
+          <Image
+            src="/arpit.jpeg"
+            alt="Arpit"
+            width={891}
+            height={1319}
+            className="mt-4 mx-auto w-40 sm:w-48 h-auto rounded-sm border border-line transition-colors duration-300"
+          />
         </div>
       </main>
 
