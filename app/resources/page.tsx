@@ -1,7 +1,9 @@
 import Link from "next/link";
 
 const resources = [
-  { name: "some resource", href: "https://example.com", desc: "why it's worth sharing" },
+  { name: "javascript", href: "https://github.com/arpitsehal/Javascript", desc: "interview-ready short notes" },
+  { name: "react", href: "https://github.com/arpitsehal/React", desc: "interview-ready short notes" },
+  { name: "backend", href: "https://github.com/arpitsehal/Backend", desc: "interview-ready short notes" },
 ];
 
 export default function Resources() {
