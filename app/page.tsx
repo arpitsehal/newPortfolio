@@ -7,8 +7,8 @@ const socials = [
   { label: "GITHUB", href: "https://github.com/arpitsehal" },
   { label: "TWITTER", href: "https://x.com/MacAppu0" },
   { label: "LINKEDIN", href: "https://linkedin.com/in/arpitsehal" },
-  { label: "INSTAGRAM", href: "https://instagram.com/_axpiitttt" },
-  { label: "RÉSUMÉ", href: "https://drive.google.com/file/d/1ZRUsWZ0k_nkDJmu2FqdewACW7M9nMtaP/view?usp=sharing" },
+  { label: "INSTAGRAM", href: "https://instagram.com/sehal_arpit" },
+  { label: "RÉSUMÉ", href: "https://drive.google.com/file/d/1jSpgQ4Nf36p9lMu1NFnWjXKl5FR1hssH/view?usp=sharing" },
 ];
 
 type ExperienceEntry = {
